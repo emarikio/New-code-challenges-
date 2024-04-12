@@ -1,11 +1,17 @@
-let speedLimit = "70km/s";
-let speedCar = 60;
-if (speedCar > speedLimit){
-    console.log('Ok');
-}else if (speedCar > speedLimit) {
-    let points = math.floor((speedCar - speedLimit) / 5);
-    console.log('Points: ' + points);
-    if (points >= 12) {
-        console.log('License suspended');
+// Function that calculates speed
+
+function calculateSpeed(speed) {
+    const speedLimit = 70;
+    let demeritPoints = 0;
+
+    if (speed <= speedLimit) {
+        console.log("OK");
+    }else {
+        demeritPoints = Math.floor(speed - speedLimit / 5);
+        console.log("Points:", demeritPoints);
+
+        if (demeritPoints > 12) {
+            console.log("License suspended");
+        }
     }
 }

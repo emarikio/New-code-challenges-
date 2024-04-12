@@ -1,15 +1,20 @@
-let marks = "Enter a number between 0-100"
-function inputStudentGrades(marks) {
-    if (marks > 79){
-        grade = 'A';
-}else if (marks >= 60, marks <= 79) {
-    grade = 'B';
-}else if (marks >= 49, marks <= 59) {
-    grade = 'C';
-}else if (marks >= 40, marks <= 49) {
-    grade = 'D';
-}else {
-    return 'E';
+// Define the students marks 
+const marks = 70;
+
+// Code that assigns grade to marks
+if (marks > 70 && marks < 100) {
+    console.log("Grade A");
+}else if (marks >= 60 && marks <= 79) {
+    console.log("Grade B");
+}else if (marks >= 50 && marks <= 59) {
+    console.log("Grade C");
+}else if (marks >= 40 && marks <= 49) {
+    console.log("Grade D");
+}else if (marks > 0 && marks <= 40) {
+    console.log("Grade E");
 }
+
+// Marks below 0 and greater than 100
+else {
+    console.log("Invalid Marks!");
 }
-console.log(inputStudentGrades);
